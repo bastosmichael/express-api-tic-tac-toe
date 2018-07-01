@@ -1,5 +1,5 @@
 const gameRoutes = require('./game_routes');
-module.exports = function(app, game) {
-  gameRoutes(app, game);
+module.exports = function(app) {
+  gameRoutes(app);
   // Other route groups could go here, in the future
 };

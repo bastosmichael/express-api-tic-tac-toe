@@ -5,6 +5,10 @@ Quick little Tic Tac Toe API game
 
 `npm i && npm start`
 
+## Running development
+
+`npm run dev`
+
 ## Test End Points
 
-`curl -X POST http://localhost:8000/new_game`
+`curl --data "boardSize=3" http://localhost:8000/game/new`
