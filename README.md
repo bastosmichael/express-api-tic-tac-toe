@@ -17,10 +17,10 @@ Quick little Tic Tac Toe API game
 
 The JSON output would look something like this...
 
-```{"message":"new game created",
+`{"message":"new game created",
  "starting_turn":"X",
  "output":"   |   |  \r\n-----------\r\n   |   |  \r\n-----------\r\n   |   |  ",
- "position":"3  .  .  . \r\n2  .  .  . \r\n1  .  .  . \r\n   1  2  3  "}```
+ "position":"3  .  .  . \r\n2  .  .  . \r\n1  .  .  . \r\n   1  2  3  "}`
 
 By default the parameter boardSize creates 3 rows and columns, you can add more to create a bigger board with more complexity.
 
@@ -30,10 +30,10 @@ By default the parameter boardSize creates 3 rows and columns, you can add more 
 
 The JSON output would look something like this...
 
-```{"message":"in progress",
+`{"message":"in progress",
  "next_turn":"X",
  "output":"   |   |  \r\n-----------\r\n   |   |  \r\n-----------\r\n   |   |  ",
- "poistion":"3  .  .  . \r\n2  .  .  . \r\n1  .  .  . \r\n   1  2  3  "}```
+ "poistion":"3  .  .  . \r\n2  .  .  . \r\n1  .  .  . \r\n   1  2  3  "}`
 
 The JSON response gives you both output and position so that you know which moves to make next etc.
 
@@ -43,10 +43,10 @@ The JSON response gives you both output and position so that you know which move
 
 The JSON output would look something like this...
 
-```{"message":"in progress",
+`{"message":"in progress",
  "next_turn":"O",
  "output":"   |   |  \r\n-----------\r\n   |   |  \r\n-----------\r\n   |   | X",
- "position":"3  .  .  . \r\n2  .  .  . \r\n1  .  .  X \r\n   1  2  3  "}```
+ "position":"3  .  .  . \r\n2  .  .  . \r\n1  .  .  X \r\n   1  2  3  "}`
 
 You can make a random position as needed per turn.
 
@@ -56,9 +56,9 @@ You can make a random position as needed per turn.
 
 The JSON output would look something like this...
 
-```{"message":"in progress",
+`{"message":"in progress",
  "next_turn":"X",
  "output":"   |   |  \r\n-----------\r\n O |   |  \r\n-----------\r\n   |   | X",
- "position":"3  .  .  . \r\n2  O  .  . \r\n1  .  .  X \r\n   1  2  3  "}```
+ "position":"3  .  .  . \r\n2  O  .  . \r\n1  .  .  X \r\n   1  2  3  "}`
 
 Moves are based on an x and y axis grid system.
