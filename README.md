@@ -15,6 +15,8 @@ Quick little Tic Tac Toe API game
 
 `curl --data "boardSize=3" http://localhost:8000/game/new`
 
+The JSON output would look something like this...
+
 ```{"message":"new game created",
  "starting_turn":"X",
  "output":"   |   |  \r\n-----------\r\n   |   |  \r\n-----------\r\n   |   |  ",
@@ -23,6 +25,8 @@ Quick little Tic Tac Toe API game
 ### Check Status of Board
 
 `curl http://localhost:8000/game/status`
+
+The JSON output would look something like this...
 
 ```{"message":"in progress",
  "next_turn":"X",
@@ -33,6 +37,8 @@ Quick little Tic Tac Toe API game
 
 `curl -X POST http://localhost:8000/game/random`
 
+The JSON output would look something like this...
+
 ```{"message":"in progress",
  "next_turn":"O",
  "output":"   |   |  \r\n-----------\r\n   |   |  \r\n-----------\r\n   |   | X",
@@ -41,6 +47,8 @@ Quick little Tic Tac Toe API game
 ### Make a Move using xAxis and yAxis parameters
 
 `curl --data "xAxis=1&yAxis=2" http://localhost:8000/game/move`
+
+The JSON output would look something like this...
 
 ```{"message":"in progress",
  "next_turn":"X",
